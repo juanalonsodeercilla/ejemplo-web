@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Horario</title>
+
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- CONTENIDO -->
+    <main>
+      <h2>Horario Semanal</h2>
+      <table>
+        <thead>
+          <tr>
+            <td></td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- 1ª hora -->
+          <tr>
+            <td>8:30- 9:25</td>
+            <td class="pro" rowspan="2">Programación</td>
+            <td class="sis">Sistemas</td>
+            <td class="bdd" rowspan="2">BBDD</td>
+            <td class="pro" rowspan="2">Programación</td>
+            <td class="ipe" rowspan="2">IPE</td>
+          </tr>
+          <!-- 2ª hora -->
+          <tr>
+            <td>9:25-10:20</td>
+            <!-- Lunes ya está cubierto por el rowspan de arriba -->
+            <td class="ing">Inglés</td>
+            <!-- Miércoles ya está cubierto por el rowspan de arriba -->
+            <!-- Jueves ya está cubierto por el rowspan de arriba -->
+            <!-- Viernes ya está cubierto por el rowspan de arriba -->
+          </tr>
+          <!-- 3ª hora -->
+          <tr>
+            <td>10:20-11:15</td>
+            <td>Proyecto</td>
+            <td class="bd">BBDD</td>
+            <td>LLMM</td>
+            <td class="sist">Sistemas</td>
+            <td>LLMM</td>
+          </tr>
+          <!-- Recreo -->
+          <tr class="recreo">
+            <td>11:15-11:45</td>
+            <td colspan="5">R E C R E O</td>
+          </tr>
+          <!-- 4ª hora -->
+          <tr>
+            <td>11:45-12:40</td>
+            <td>Sistemas</td>
+            <td rowspan="2" class="bd">BBDD</td>
+            <td rowspan="2" class="pro">Programación</td>
+            <td>Sistemas</td>
+            <td>Digitalización</td>
+          </tr>
+          <!-- 5ª hora -->
+          <tr>
+            <td>12:40-13:35</td>
+            <td>Digitalización</td>
+            <!-- Martes ya está cubierto por el rowspan de arriba -->
+            <!-- Miércoles ya está cubierto por el rowspan de arriba -->
+            <td>Sostenibilidad</td>
+            <td rowspan="2">Entornos</td>
+          </tr>
+          <!-- 6ª hora -->
+          <tr>
+            <td>13:35-14:30</td>
+            <td>LLMM</td>
+            <td>IPE</td>
+            <td>Sistemas</td>
+            <td>Inglés</td>
+            <!-- Viernes ya está cubierto por el rowspan de arriba -->
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="js/componentes.js"></script>
+  </body>
+</html>
